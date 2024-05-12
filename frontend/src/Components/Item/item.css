@@ -1,0 +1,109 @@
+.item{
+    width: 280px;
+}
+
+.item img{
+    width: 280px;
+}
+
+.item p{
+    margin: 6px 0px;
+}
+
+.item-prices{
+    display:flex;
+    gap: 20px;
+}
+
+.item-price-new{
+    color: #374151;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.item-price-old{
+    color: #8c8c8c;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.item:hover{
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .item,
+    .item img {
+      width: 250px; /* Adjust width for smaller screens */
+    }
+  
+    .item-prices {
+      gap: 15px; /* Adjust the gap between price elements */
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .item,
+    .item img {
+      width: 200px; /* Further reduce width for smaller screens */
+    }
+  
+    .item-prices {
+      gap: 10px; /* Further adjust the gap between price elements */
+    }
+  
+    .item p {
+      font-size: 16px; /* Reduce font size for smaller screens */
+    }
+  
+    .item-price-new,
+    .item-price-old {
+      font-size: 16px; /* Reduce font size for price elements */
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .item,
+    .item img {
+      width: 150px; /* Adjust width for smaller screens */
+    }
+  
+    .item-prices {
+      gap: 5px; /* Further adjust the gap between price elements */
+    }
+  
+    .item p {
+      font-size: 14px; /* Reduce font size for smaller screens */
+    }
+  
+    .item-price-new,
+    .item-price-old {
+      font-size: 14px; /* Reduce font size for price elements */
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .item,
+    .item img {
+      width: 100%; /* Make the item and its image take full width */
+    }
+  
+    .item-prices {
+      flex-direction: column; /* Stack price elements vertically */
+      gap: 5px; /* Adjust the gap between price elements */
+    }
+  
+    .item-price-new,
+    .item-price-old {
+      font-size: 16px; /* Reset font size for price elements */
+    }
+  
+    .item p {
+      margin: 3px 0; /* Adjust margin for smaller screens */
+      font-size: 14px; /* Reset font size for item paragraphs */
+    }
+  }
+  

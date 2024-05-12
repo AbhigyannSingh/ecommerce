@@ -1,0 +1,44 @@
+.relatedproducts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+}
+.relatedproducts h1{
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+.relatedproducts hr{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+.relatedproducts-item{
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1280px) {
+    .relatedproducts h1 {
+        font-size: 40px; /* Adjusted font size for screens up to 1280px */
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .relatedproducts h1 {
+        font-size: 30px; /* Adjusted font size for screens up to 800px */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .relatedproducts-item {
+        flex-direction: column; /* Adjusted flex direction for screens up to 500px */
+        align-items: center; /* Center align for screens up to 500px */
+        gap: 20px; /* Adjusted gap for screens up to 500px */
+    }
+}

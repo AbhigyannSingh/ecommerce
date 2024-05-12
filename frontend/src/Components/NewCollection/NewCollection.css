@@ -1,0 +1,75 @@
+/* Popular.css */
+
+.new-collection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 100px;
+}
+
+.new-collection h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.new-collection hr {
+   width: 200px;
+   height: 6px;
+   border-radius: 10px;
+   background: #252525;
+}
+
+.collections{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+@media screen and (max-width: 1280px) {
+    .new-collection h1 {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+  
+    .collections {
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* Reduce number of columns for smaller screens */
+        gap: 20px; /* Adjust gap between items for smaller screens */
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .new-collection h1 {
+        font-size: 30px; /* Further adjust font size for smaller screens */
+    }
+  
+    .collections {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 15px; /* Further adjust gap between items for smaller screens */
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .new-collection h1 {
+        font-size: 25px; /* Further adjust font size for smaller screens */
+    }
+  
+    .collections {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;        gap: 10px; /* Further adjust gap between items for smaller screens */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .new-collection h1 {
+        font-size: 20px; /* Further adjust font size for smaller screens */
+    }
+  
+    .collections {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px; /* Further adjust gap between items for smaller screens */
+    }
+}
